@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+:root{
+    --siyah:#000;
+    --beyaz:#fff;
+    --seffaf: rgba(62, 71, 91, 0.7);
+}
+html{
+    font-family: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
+body{
+    background: center/cover no-repeat url(images/bg.jpg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    flex: 1 1 10vh;
+    background-color: var(--seffaf);
+}
+section{ 
+    padding: 100px;
+    display: flex;
+    flex: 0 0 50%;
+    height: 450px;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+section > p{
+    flex: 0 0 50%;
+    width: 500px;
+    padding: 5px;
+}
+section > a{
+    width: 150px;
+    flex: 0 0 10%;
+    padding: 5px;
+    border: #000000 solid 2px;
+    background-color: rgb(4, 251, 45);
+    color: rgb(251, 251, 251);
+}
+section > img{
+    height: 350px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+main{
+    width: 100%;
+    flex: 1 1 75vh;
+    flex-wrap: wrap;
+    display: flex;
+}
+footer{
+    width: 100%;
+    flex: 1 1 15vh;
+    background-color: var(--seffaf);
+}
